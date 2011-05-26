@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>tableMeter Plugin Example</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"> </script>
+<script type="text/javascript" src="jquery.tableMeter.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.meter').tableMeter( { meterMax : 50, meterWidth: 100 });
+	});
+</script>
+</head>
+<body>
+
+<h1>tableMeter Example</h1>
+
+<table border="0" cellspacing="5" cellpadding="5">
+	<thead>
+		<tr>
+			<th>Data</th>
+			<th>Data</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Data</td>
+			<td class="meter">33</td>
+		</tr>
+		<tr>
+			<td>Data</td>
+			<td class="meter">42</td>
+		</tr>
+		<tr>
+			<td>Data</td>
+			<td class="meter">11</td>
+		</tr>
+		<tr>
+			<td>Data</td>
+			<td class="meter">9</td>
+		</tr>
+		<tr>
+			<td>Data</td>
+			<td class="meter">15</td>
+		</tr>
+		<tr>
+			<td>Data</td>
+			<td class="meter">27</td>
+		</tr>
+	</tbody>
+</table>
+
+You don't have to put limit it to a table. Here is a meter as a stand-alone element.
+
+<span class="meter">25</span> 
+
+
+</body>
+</html>

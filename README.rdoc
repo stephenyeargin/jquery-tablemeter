@@ -1,0 +1,21 @@
+== Basic Usage
+
+This plugin works by adding using a jQuery selector to pick a block-level element that contains integers to render an indicator bar. It is configurable through options passed to the tableMeter() function.
+
+    // Wrap in a ready() to ensure the table has loaded fully
+    $(document).ready(function () {
+        $('.meter').tableMeter( { meterMax : 50, meterWidth: 100 } );
+    });
+
+== Built-in Options
+
+Below lists the available options along with their default settings.
+
+    'meterMax'            : 1.0,
+    'meterWidth'          : 50,
+    'meterHeight'         : 15,
+    'meterContainerBorder': 1,
+    'meterFillColor'      : '#999999',
+    'meterEmptyColor'     : '#ECECEC',
+    'meterContainerClass' : 'meter-container',
+    'meterBarClass'       : 'meter-bar'
