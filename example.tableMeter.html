@@ -7,7 +7,7 @@
 	$(document).ready(function () {
 		$('.meter').tableMeter( { meterMax : 50, meterWidth: 100 });
 		$('.meter-alt1').tableMeter( { meterWidth: 50, meterFillColor: '#FF0000', meterContainerBorder: 3 });
-		$('.meter-alt2').tableMeter( { meterMax : 1000, meterWidth: 200, meterFillColor: '#FF00FF', meterEmptyColor: 'FFFFFF' });
+		$('.meter-alt2').tableMeter( { meterMax : 1000, meterWidth: 200, meterFillColor: '#FF00FF', meterEmptyColor: 'FFFFFF', meterHeight: 10 });
 	});
 </script>
 </head>
@@ -39,8 +39,8 @@
 		</tr>
 		<tr>
 			<td>Data</td>
-			<td class="meter">11</td>
-			<td class="meter-alt1">0.20</td>
+			<td class="meter">49</td>
+			<td class="meter-alt1">0.333333</td>
 			<td class="meter-alt2">420</td>
 		</tr>
 		<tr>
@@ -66,7 +66,7 @@
 
 <hr />
 <p>
-	The plugin is not just limited to tables. Here are meters as stand-alone elements.
+	The plugin is not just limited to table cells. Here are meters as stand-alone elements.
 </p>
 
 <span class="meter">32</span>
@@ -74,8 +74,6 @@
 <span class="meter-alt1">5</span> <!-- Note: This value is purposefully above the default meterMax -->
 <br />
 <span class="meter-alt2">32</span> 
-
-
 
 </body>
 </html>
