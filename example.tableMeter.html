@@ -1,11 +1,13 @@
 <html>
 <head>
-<title>tableMeter Plugin Example</title>
+<title>tableMeter Plugin Examples</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"> </script>
 <script type="text/javascript" src="jquery.tableMeter.js"> </script>
 <script type="text/javascript">
 	$(document).ready(function () {
 		$('.meter').tableMeter( { meterMax : 50, meterWidth: 100 });
+		$('.meter-alt1').tableMeter( { meterWidth: 50, meterFillColor: '#FF0000', meterContainerBorder: 3 });
+		$('.meter-alt2').tableMeter( { meterMax : 1000, meterWidth: 200, meterFillColor: '#FF00FF', meterEmptyColor: 'FFFFFF' });
 	});
 </script>
 </head>
@@ -18,41 +20,61 @@
 		<tr>
 			<th>Data</th>
 			<th>Data</th>
+			<th>Data</th>
+			<th>Data</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Data</td>
 			<td class="meter">33</td>
+			<td class="meter-alt1">0.78</td>
+			<td class="meter-alt2">325</td>
 		</tr>
 		<tr>
 			<td>Data</td>
 			<td class="meter">42</td>
+			<td class="meter-alt1">0.10</td>
+			<td class="meter-alt2">25</td>
 		</tr>
 		<tr>
 			<td>Data</td>
 			<td class="meter">11</td>
+			<td class="meter-alt1">0.20</td>
+			<td class="meter-alt2">420</td>
 		</tr>
 		<tr>
 			<td>Data</td>
 			<td class="meter">9</td>
+			<td class="meter-alt1">0.95</td>
+			<td class="meter-alt2">625</td>
 		</tr>
 		<tr>
 			<td>Data</td>
 			<td class="meter">15</td>
+			<td class="meter-alt1">0.722</td>
+			<td class="meter-alt2">759</td>
 		</tr>
 		<tr>
 			<td>Data</td>
 			<td class="meter">27</td>
+			<td class="meter-alt1">0.31</td>
+			<td class="meter-alt2">400</td>
 		</tr>
 	</tbody>
 </table>
 
 <hr />
+<p>
+	The plugin is not just limited to tables. Here are meters as a stand-alone elements.
+</p>
 
-The plugin is not just limited to tables. Here is a meter as a stand-alone element.
+<span class="meter">32</span>
+<br />
+<span class="meter-alt1">5</span> <!-- Note: This value is purposefully above the default meterMax -->
+<br />
+<span class="meter-alt2">32</span> 
 
-<span class="meter">25</span> 
 
 
 </body>

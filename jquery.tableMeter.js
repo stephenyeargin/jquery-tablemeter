@@ -24,6 +24,7 @@
 			var $this = $(this);
 			var value = $(this).html();
 			var meterValue = Math.round((value / settings.meterMax)*100)/100;
+				if (meterValue > settings.meterMax) { meterValue = settings.meterMax; }
 			var indicatorFillWidth = Math.round(meterValue * settings.meterWidth);
 
 			// Template to output for each meter
